@@ -18,17 +18,26 @@ body {
     overflow: hidden; /* Hide overflow for the animated background */
 }
 
-    .header::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: linear-gradient(270deg, #ff7f50, #ff6347, #ff4500);
-        z-index: 1;
-        animation: gradient-animation 15s ease infinite; /* Add animation */
-    }
+.lottie-animation {
+    position: absolute; /* Position the animation absolutely */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    z-index: 0; /* Behind other content */
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(270deg, rgba(255, 127, 80, 0.8), rgba(255, 99, 71, 0.8), rgba(255, 69, 0, 0.8));
+    z-index: 1;
+    animation: gradient-animation 15s ease infinite; /* Add animation */
+}
 
 @keyframes gradient-animation {
     0% {
@@ -80,8 +89,7 @@ body {
     position: relative;
 }
 
-    /* Rest of your CSS code remains the same */
-
+    /* Add your other CSS styles here for .intro, .locations, .location-card, .footer, etc. */
     .explore-btn:hover {
         background-color: #e64a19; /* Darker shade on hover */
         transform: scale(1.05); /* Slightly enlarge on hover */
