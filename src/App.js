@@ -1,6 +1,8 @@
 // src/App.js
 import React from 'react';
 import Slider from 'react-slick';
+import Lottie from 'react-lottie';
+import animationData from './animation.json'; // Your Lottie animation JSON file
 import './App.css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -15,9 +17,19 @@ const App = () => {
         slidesToScroll: 1,
     };
 
+    const defaultOptions = {
+        loop: true,
+        autoplay: true,
+        animationData: animationData,
+        rendererSettings: {
+            preserveAspectRatio: 'xMidYMid slice'
+        }
+    };
+
     return (
         <div className="App">
             <header className="header">
+                <Lottie options={defaultOptions} height={'100%'} width={'100%'} />
                 <h1>Coconut Tree Travels</h1>
                 <p>Your Dream Destinations Await</p>
                 <a href="#explore" className="explore-btn">Explore</a>
