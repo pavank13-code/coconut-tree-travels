@@ -3,7 +3,7 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #eef2f3;
 }
 
 .header {
@@ -14,49 +14,112 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    position: relative;
+    filter: brightness(0.8); /* Darkens the background image for better text visibility */
 }
 
     .header h1 {
         font-size: 4rem;
         margin: 0;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     }
 
     .header p {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         margin: 10px 0;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     }
 
 .explore-btn {
     background-color: #ff7f50;
-    padding: 10px 20px;
+    padding: 15px 30px;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 30px;
     cursor: pointer;
     text-transform: uppercase;
     font-weight: bold;
     text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
+    .explore-btn:hover {
+        background-color: #ff6347; /* Darker shade on hover */
+        transform: scale(1.05); /* Slightly enlarge on hover */
+    }
+
 .intro {
-    padding: 50px;
-    background-color: white;
+    padding: 50px 20px;
+    background-color: #ffffff;
     text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 1200px; /* Limits width for large screens */
 }
+
+    .intro h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    .intro p {
+        font-size: 1.2rem;
+        color: #555; /* A softer color for the paragraph text */
+    }
 
 .locations {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
     margin-top: 30px;
 }
 
 .location-card {
     max-width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    margin: 10px; /* Adds spacing between cards */
 }
+
+    .location-card:hover {
+        transform: scale(1.03); /* Slightly enlarge on hover */
+    }
 
     .location-card img {
         width: 100%;
-        border-radius: 10px;
+        height: auto;
+        border-bottom: 3px solid #ff7f50; /* Adds a decorative border */
+    }
+
+    .location-card h3 {
+        font-size: 1.5rem;
+        color: #333; /* Darker color for headings */
+        margin: 10px 0;
+    }
+
+.card-description {
+    color: #666; /* A lighter color for the description */
+    font-size: 1rem;
+}
+
+.learn-more-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 8px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+    .learn-more-btn:hover {
+        background-color: #0056b3; /* Darker shade on hover */
+        transform: scale(1.05); /* Slightly enlarge on hover */
     }
 
 .footer {
@@ -64,4 +127,5 @@ body {
     color: white;
     text-align: center;
     padding: 20px;
+    position: relative; /* Allows for positioning of child elements */
 }

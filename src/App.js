@@ -18,14 +18,20 @@ function App() {
                     <div className="location-card">
                         <img src="https://source.unsplash.com/800x600/?beach" alt="Beach" />
                         <h3>Beach Paradise</h3>
+                        <p className="card-description">Relax in the sun and enjoy crystal-clear waters.</p>
+                        <a href="#" className="learn-more-btn">Learn More</a>
                     </div>
                     <div className="location-card">
                         <img src="https://source.unsplash.com/800x600/?mountain" alt="Mountain" />
                         <h3>Mountain Adventure</h3>
+                        <p className="card-description">Experience thrilling hikes and breathtaking views.</p>
+                        <a href="#" className="learn-more-btn">Learn More</a>
                     </div>
                     <div className="location-card">
                         <img src="https://source.unsplash.com/800x600/?forest" alt="Forest" />
                         <h3>Tropical Forest</h3>
+                        <p className="card-description">Explore lush greenery and diverse wildlife.</p>
+                        <a href="#" className="learn-more-btn">Learn More</a>
                     </div>
                 </div>
             </section>
