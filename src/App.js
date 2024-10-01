@@ -4,7 +4,7 @@ import Lottie from 'react-lottie';
 import './App.css';
 
 // Import your Lottie animation JSON files
-import airplaneAnimation from './animations/airplane.json'; // Example animation
+import airplaneAnimation from './animation.json'; // Example animation
 
 function App() {
     const defaultOptionsAirplane = {
