@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/coconut-tree-travels/static/css/main.cdf47c1a.css",
-    "main.js": "/coconut-tree-travels/static/js/main.85c49f70.js",
-    "static/js/453.3c64c29e.chunk.js": "/coconut-tree-travels/static/js/453.3c64c29e.chunk.js",
-    "index.html": "/coconut-tree-travels/index.html",
-    "main.cdf47c1a.css.map": "/coconut-tree-travels/static/css/main.cdf47c1a.css.map",
-    "main.85c49f70.js.map": "/coconut-tree-travels/static/js/main.85c49f70.js.map",
-    "453.3c64c29e.chunk.js.map": "/coconut-tree-travels/static/js/453.3c64c29e.chunk.js.map"
+    "main.css": "/static/css/main.cdf47c1a.css",
+    "main.js": "/static/js/main.eef15f90.js",
+    "static/js/453.3c64c29e.chunk.js": "/static/js/453.3c64c29e.chunk.js",
+    "index.html": "/index.html",
+    "main.cdf47c1a.css.map": "/static/css/main.cdf47c1a.css.map",
+    "main.eef15f90.js.map": "/static/js/main.eef15f90.js.map",
+    "453.3c64c29e.chunk.js.map": "/static/js/453.3c64c29e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cdf47c1a.css",
-    "static/js/main.85c49f70.js"
+    "static/js/main.eef15f90.js"
   ]
 }
