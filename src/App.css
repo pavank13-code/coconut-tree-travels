@@ -3,7 +3,7 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #eef2f3; /* Light background */
+    background-color: #1A1A1A; /* Dark background */
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
@@ -16,6 +16,7 @@ body {
     text-align: center;
     position: relative;
     overflow: hidden; /* Hide overflow for the animated background */
+    background-color: #1A1A1A; /* Ensure the background is dark */
 }
 
 .lottie-animation {
@@ -34,30 +35,15 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(270deg, rgba(255, 127, 80, 0.8), rgba(255, 99, 71, 0.8), rgba(255, 69, 0, 0.8));
+    background: transparent; /* Remove the gradient to maintain a solid background */
     z-index: 1;
-    animation: gradient-animation 15s ease infinite; /* Add animation */
-}
-
-@keyframes gradient-animation {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
 }
 
 .header h1 {
     font-size: 4.5rem;
     margin: 0;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
-    color: #f6b93b; /* Golden color */
+    color: #8B4513; /* Saddle Brown for header text */
     letter-spacing: 2px; /* Increased spacing for a classic look */
     z-index: 2; /* Bring text above background */
     position: relative;
@@ -67,13 +53,13 @@ body {
     font-size: 1.8rem;
     margin: 10px 0;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    color: #ffeb3b; /* Bright yellow */
+    color: #8B4513; /* Saddle Brown for paragraph text */
     z-index: 2; /* Bring text above background */
     position: relative;
 }
 
 .explore-btn {
-    background-color: #ff5722; /* Bright coral */
+    background-color: #B0C4DE; /* Light Steel Blue */
     padding: 15px 30px;
     color: white;
     border: none;
@@ -84,16 +70,18 @@ body {
     text-decoration: none;
     font-size: 1.2rem;
     transition: background-color 0.3s, transform 0.3s;
-    box-shadow: 0 5px 15px rgba(255, 87, 34, 0.5); /* Shadow effect */
+    box-shadow: 0 5px 15px rgba(176, 196, 222, 0.5); /* Shadow effect */
     z-index: 2; /* Bring button above background */
-    position: relative;
 }
 
-    /* Add your other CSS styles here for .intro, .locations, .location-card, .footer, etc. */
     .explore-btn:hover {
-        background-color: #e64a19; /* Darker shade on hover */
+        background-color: #A0B2C3; /* Darker shade on hover */
         transform: scale(1.05); /* Slightly enlarge on hover */
     }
+
+/* Other styles remain unchanged... */
+
+
 
 .carousel {
     max-width: 1200px;
@@ -151,7 +139,7 @@ body {
     .location-card img {
         width: 100%;
         height: auto;
-        border-bottom: 4px solid #ffeb3b; /* Adds a decorative border */
+        border-bottom: 4px solid #B0C4DE; /* Light Steel Blue border */
     }
 
     .location-card h3 {
@@ -207,7 +195,7 @@ body {
 }
 
     .service i {
-        color: #ff5722; /* Coral color for icons */
+        color: #B0C4DE; /* Light Steel Blue for icons */
         margin-bottom: 10px;
     }
 
